@@ -1,0 +1,246 @@
+*{ 
+
+    background-color: aquamarine;
+  }
+  
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .block {
+    border: 10px solid black;
+    margin: 1% 0;
+    max-width: 1200px;
+  
+  }
+  
+  .block-flex {
+  /* border: 10px solid black;
+    margin: 1% 0;
+    max-width: 1200px;*/
+    display: flex;
+  }
+  
+  .box {
+    border: 10px solid #78909C;
+    box-sizing: border-box;
+   height: 40px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .left-container {
+    border-right: 10px solid black;
+    width: 70%;
+  
+  }
+  
+  .right-container {
+    width: 30%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .box1,
+  .box3 {
+    width: 25%;
+    background-color: red;
+    /*
+    border: 2ex solid #78909C;*/
+  }
+  
+  .box2 {
+    width: 50%;
+    background-color: red;
+  /*  
+    border: 2ex solid #78909C;*/
+  }
+  
+  .block:first-child .container {
+    border-bottom: 10px solid black;
+  }
+  
+  .box4 {
+   
+    background-color: yellow;
+   border: 1.5ex solid orange;
+  }
+  
+  .box5,
+  .box6,
+  .box7,
+  .box8 {
+  
+    width: 50%;
+   
+    background-color: blueviolet;
+  }
+  
+  .box9,
+  .box10 {
+    width: 100%;
+    background-color: yellow;
+    border-color: red;
+   
+  }
+  
+  
+  
+  .box11-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .box11 {
+    width: 100%;
+    background-color: blue;
+   
+  }
+  
+  .box12 {
+    width: 100%;
+    border: 1ex solid orange;
+    height: 20px;
+    background-color: orange;
+  }
+  
+  /* 
+    ##Device = Desktops
+    ##Screen = 1281px to higher resolution desktops
+  */
+  
+  @media (min-width: 1281px) {
+  
+    /* CSS */
+  
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+  
+    /* CSS */
+  
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+  
+    /* CSS */
+  
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    /* CSS */
+  
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+    /* CSS */
+    .block {
+      border: 15px solid black;
+    }
+  
+    .block-flex {
+  
+      border: yellow solid 15px;
+      flex-direction: column;
+    }
+  
+    .left-container {
+      border-right: yellow solid 15px;
+      /* Borde a la derecha del primer contenedor */
+      width: 100%;
+  
+    }
+  
+    .right-container {
+      width: 100%;
+      border-top: yellow solid 15px;
+      height: min-content;
+      display: flex;
+      flex-direction: column;
+    }
+    .block:first-child .container {
+      border-bottom: 15px solid black;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .block {
+      border: 20px solid black;
+      margin: 1% 0;
+      max-width: 1200px;
+    }
+    
+    .block:first-child .container {
+      border-bottom: 20px solid black;
+    }
+  
+    .block-flex {
+      border: yellow solid 20px;
+      flex-direction: column;
+    }
+  
+    .left-container {
+  
+      border-right: yellow solid 20px;
+      width: 100%;
+    }
+  
+    .right-container {
+     
+      width: 100%;
+      border-top: yellow solid 20px;
+      height: min-content;
+    }
+  
+    /*  todos los box en block2 , 100% de ancho */
+    .box1,
+    .box2,
+    .box3,
+    .box5,
+    .box6,
+    .box7,
+    .box8,
+    .box9,
+    .box10,
+    .box11 {
+      width: 100%;
+    }
+  
+  
+  }
